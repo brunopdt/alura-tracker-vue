@@ -1,7 +1,7 @@
 <template>
   <BoxWrapper>
     <div class="columns">
-      <div class="column is-7">
+      <div class="column is-7 desc">
         {{ tarefa.descricao || 'Tarefa sem descrição' }}
       </div>
       <div class="column">
@@ -31,3 +31,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style scoped>
+.desc {
+  color: var(--texto-primario);
+}
+</style>

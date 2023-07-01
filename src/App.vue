@@ -9,7 +9,7 @@
 
         <TarefaComp v-for="(tarefa, index) in tarefas" :key="index" :tarefa="tarefa" />
 
-        <BoxWrapper v-if="listaEstaVazia">
+        <BoxWrapper v-if="listaEstaVazia" id='placeholder'>
           Você não está muito produtivo hoje :(
         </BoxWrapper>
 
@@ -74,6 +74,10 @@ main.modo-escuro {
 
 .conteudo {
   background-color: var(--bg-primario);
+  color: var(--texto-primario);
+}
+
+#placeholder {
   color: var(--texto-primario);
 }
 </style>
